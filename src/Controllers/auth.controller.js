@@ -1,13 +1,7 @@
 /* eslint-disable import/extensions */
-import joi from 'joi';
 import bcrypt from 'bcrypt';
 import db from '../Database/db.js';
-
-const userSchema = joi.object({
-  name: joi.string().required(),
-  email: joi.email().required(),
-  password: joi.string().required(),
-});
+import { userSchema } from '../Schemas/signUpValidation.js';
 
 async function registerUser(req, res) {
   const { name, email, password } = req.body;
