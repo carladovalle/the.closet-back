@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 import { v4 as uuid } from 'uuid';
 import db from '../Database/db.js';
 import { userSchema } from '../Schemas/signUpValidation.js';
+import { userSchemaLogin } from '../Schemas/signInValidation.js';
 
 async function registerUser(req, res) {
   const { name, email, password } = req.body;
@@ -40,6 +41,14 @@ async function registerUser(req, res) {
 
 async function loginUser(req, res) {
   const user = req.body;
+  const validation = userSchemaLogin.validate(req.body, { abortEarly: false });
+
+  if (validation.error) {
+    const errorList = validation.error.details
+      .map((err) => err.message)
+      .join('\n');
+    return res.status(400).send(errorList);
+  }
 
   try {
 
