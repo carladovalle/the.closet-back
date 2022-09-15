@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import bcrypt from 'bcrypt';
+import { v4 as uuid } from 'uuid';
 import db from '../Database/db.js';
 import { userSchema } from '../Schemas/signUpValidation.js';
+import { userSchemaLogin } from '../Schemas/signInValidation.js';
 
 async function registerUser(req, res) {
   const { name, email, password } = req.body;
@@ -37,4 +39,40 @@ async function registerUser(req, res) {
   }
 }
 
-export { registerUser };
+async function loginUser(req, res) {
+  const user = req.body;
+  const validation = userSchemaLogin.validate(req.body, { abortEarly: false });
+
+  if (validation.error) {
+    const errorList = validation.error.details
+      .map((err) => err.message)
+      .join('\n');
+    return res.status(400).send(errorList);
+  }
+
+  try {
+
+    const checkUser = await db.collection('users').findOne({ email: user.email });
+
+    if (!checkUser) {
+      return res.status(422).send("Email ou senha inválidos.");
+    }
+
+    const decryptedPassword = bcrypt.compareSync(user.password, checkUser.password);
+
+    if (decryptedPassword) {
+      const token = uuid();
+      await db.collection('sessions').insertOne({
+        token,
+        userId: checkUser._id
+      });
+      
+      return res.status(200).send({ token, name: checkUser.name });
+    }
+    res.status(200).send('logado');
+    } catch (error) {
+    return res.send(error.message);
+  }
+}
+
+export { registerUser, loginUser };
