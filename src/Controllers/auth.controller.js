@@ -80,4 +80,15 @@ async function loginUser(req, res) {
   }
 }
 
-export { registerUser, loginUser };
+async function removeUserSession(req, res) {
+  const { token } = req.params;
+
+  try {
+    await db.collection('sessions').deleteOne({ token });
+    return res.sendStatus(200);
+  } catch (error) {
+    return res.send(error.message);
+  }
+}
+
+export { registerUser, loginUser, removeUserSession };
