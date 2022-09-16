@@ -15,7 +15,7 @@ async function listSelectedProducts(req, res) {
       .toArray();
     return res.status(200).send(productList);
   } catch (error) {
-    return res.status(405).send('erro aqui');
+    return res.status(401).send(error.message);
   }
 }
 
