@@ -42,7 +42,30 @@ async function removeProduct(req, res) {
 }
 
 async function updateProductAmount(req, res) {
-  console.log('EM CONSTRUÇÃO');
+  const { user } = res.locals;
+  const { productId } = req.params;
+  const newAmout = req.body;
+
+  try {
+    const product = await db
+      .collection('chart')
+      .findOne({ _id: new ObjectId(productId) });
+
+    if (product.userId.toString() !== user._id.toString()) {
+      return res
+        .status(401)
+        .send(
+          'Você não é o dono deste produto e, portanto, não poderá removê-lo'
+        );
+    }
+
+    await db
+      .collection('chart')
+      .updateOne({ _id: new ObjectId(productId) }, { $set: newAmout });
+    return res.sendStatus(201);
+  } catch (error) {
+    return res.status(400).send(error.message);
+  }
 }
 
 export { listSelectedProducts, removeProduct, updateProductAmount };
