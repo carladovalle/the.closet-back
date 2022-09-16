@@ -5,6 +5,7 @@ import cors from 'cors';
 import authRouter from './Routes/authRouter.js';
 import searchRouter from './Routes/searchRouter.js';
 import productsRouter from './Routes/productsRouter.js';
+import db from './Database/db.js';
 
 const server = express();
 server.use(express.json());

@@ -2,6 +2,8 @@
 /* eslint-disable import/extensions */
 import { ObjectId } from 'mongodb';
 import db from '../Database/db.js';
+import { clothes } from '../productsDB/clothes.js';
+import { shoes } from '../productsDB/shoes.js';
 
 async function listSelectedProducts(req, res) {
   const { user } = res.locals;
@@ -68,4 +70,22 @@ async function updateProductAmount(req, res) {
   }
 }
 
-export { listSelectedProducts, removeProduct, updateProductAmount };
+function populeProductsCollection(req, res) {
+  function shuffle() {
+    return Math.random() - 0.5;
+  }
+
+  const organizedShoes = shoes.sort(shuffle);
+  const organizedClothes = clothes.sort(shuffle);
+
+  db.collection('products').insertMany(organizedShoes);
+  db.collection('products').insertMany(organizedClothes);
+  res.sendStatus(200);
+}
+
+export {
+  listSelectedProducts,
+  removeProduct,
+  updateProductAmount,
+  populeProductsCollection,
+};
