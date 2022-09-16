@@ -1,0 +1,12 @@
+/* eslint-disable import/extensions */
+import express from 'express';
+import * as productsController from '../Controllers/products.controller.js';
+import { authToken } from '../Middlewares/authTokenMiddleware.js';
+
+const router = express.Router();
+
+router.use(authToken);
+router.delete('/chart/:productId', productsController.removeProduct);
+router.get('/chart', productsController.listSelectedProducts);
+
+export default router;
