@@ -3,12 +3,15 @@ import db from '../Database/db.js';
 async function product (req, res) {
     try {
         const product = {
-            name: "Tênis",
-            price: "350000",
+            name: "Tênis Lacoste Masculino",
+            description: "O tênis masculino Lacoste tem estilo minimalista.",
+            search: "tenis masculino lacoste",
+            price: "26910",
             image: "https://imgcentauro-a.akamaihd.net/230x230/96943362.jpg",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
-            size: ["36", "38", "40", "42"],
-            color: ["red", "black", "pink"]
+            color: ["red", "black", "pink"],
+            size: [35, 36, 37, 38, 39, 40, 41],
+            amount: 1,
+            comments: []
         }
         await db.collection('produts').find(product).toArray();
         res.status(200).send(product); 
