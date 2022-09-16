@@ -97,4 +97,35 @@ async function addWishlist (req, res) {
 
 }
 
-export { product, addCart, addWishlist }
+async function reviews (req, res) {
+
+    try {
+
+        const { nameComment, comment } = req.body;
+
+        await db.collection('comments').insertOne({
+            nameComment,
+            comment
+        });
+
+        res.sendStatus(201);
+    } catch (error) {
+        return res.send(error.message);
+      }
+
+}
+
+async function getReviews (req, res) {
+
+    try {
+
+        const comments = await db.collection('comments').find({}).toArray();
+
+        res.status(201).send(comments);
+    } catch (error) {
+        return res.send(error.message);
+      }
+
+}
+
+export { product, addCart, addWishlist, reviews, getReviews }
