@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.use(authToken);
 router.delete('/chart/:productId', productsController.removeProduct);
+router.put('/chart/:productId', productsController.updateProductAmount);
 router.get('/chart', productsController.listSelectedProducts);
 
 export default router;
