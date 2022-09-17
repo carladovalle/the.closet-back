@@ -1,6 +1,16 @@
 import db from '../Database/db.js';
+import { checkoutSchema } from '../Schemas/checkoutValidation.js';
 
 async function checkout (req, res) {
+
+    const validation = checkoutSchema.validate(req.body, { abortEarly: false });
+
+    if (validation.error) {
+      const errorList = validation.error.details
+        .map((err) => err.message)
+        .join('\n');
+      return res.status(400).send(errorList);
+    }
 
     const token = req.headers.authorization?.replace('Bearer ', '');
 
@@ -31,6 +41,7 @@ async function checkout (req, res) {
             lastName,
             PhoneNumber,
             emailAdress,
+            cep,
             state,
             city,
             district,
@@ -45,6 +56,7 @@ async function checkout (req, res) {
             lastName,
             PhoneNumber,
             emailAdress,
+            cep,
             state,
             city,
             district,
