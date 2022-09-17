@@ -1,15 +1,17 @@
 import db from '../Database/db.js';
+import { cartAndWishlistSchema } from '../Schemas/cartAndWishlistValidation.js';
+import { reviewsSchema } from '../Schemas/reviewsValidation.js';
 
 async function product (req, res) {
     try {
         const product = {
             name: "Tênis Lacoste Masculino",
-            description: "O tênis masculino Lacoste tem estilo minimalista.",
+            description: "Para caminhadas e corridas leves, treinos de musculação ou até mesmo no dia a dia aposte no conforto e qualidade do Tênis Nike Feminino Revolution 6 Next Nature para completar seu look.",
             search: "tenis masculino lacoste",
             price: "26910",
             image: "https://imgcentauro-a.akamaihd.net/230x230/96943362.jpg",
             color: ["red", "black", "pink"],
-            size: [35, 36, 37, 38, 39, 40, 41],
+            size: ["35", "36", "37", "38", "39", "40", "41"],
             amount: 1,
             comments: []
         }
@@ -21,6 +23,15 @@ async function product (req, res) {
 }
 
 async function addCart (req, res) {
+
+    const validation = cartAndWishlistSchema.validate(req.body, { abortEarly: false });
+
+    if (validation.error) {
+      const errorList = validation.error.details
+        .map((err) => err.message)
+        .join('\n');
+      return res.status(400).send(errorList);
+    }
 
     const token = req.headers.authorization?.replace('Bearer ', '');
 
@@ -62,6 +73,15 @@ async function addCart (req, res) {
 
 async function addWishlist (req, res) {
 
+    const validation = cartAndWishlistSchema.validate(req.body, { abortEarly: false });
+
+    if (validation.error) {
+      const errorList = validation.error.details
+        .map((err) => err.message)
+        .join('\n');
+      return res.status(400).send(errorList);
+    }
+
     const token = req.headers.authorization?.replace('Bearer ', '');
 
     if(!token) {
@@ -101,6 +121,15 @@ async function addWishlist (req, res) {
 }
 
 async function reviews (req, res) {
+
+    const validation = reviewsSchema.validate(req.body, { abortEarly: false });
+
+    if (validation.error) {
+      const errorList = validation.error.details
+        .map((err) => err.message)
+        .join('\n');
+      return res.status(400).send(errorList);
+    }
 
     try {
 
