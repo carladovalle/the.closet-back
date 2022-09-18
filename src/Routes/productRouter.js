@@ -8,8 +8,6 @@ const router = express.Router();
 router.put('/product/:productId', productController.reviews);
 router.get('/product/:id', productController.product);
 router.post('/cart', productController.addCart);
-
-router.use(authToken);
-router.post('/wishlist', productController.addWishlist);
+router.post('/wishlist', authToken, productController.addWishlist);
 
 export default router;
