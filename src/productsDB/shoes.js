@@ -12,6 +12,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Tenis Adidas Lite Feminino',
@@ -25,6 +26,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Tênis Nike Precision Masculino',
@@ -38,6 +40,7 @@ const shoes = [
     size: [38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Tenis Adidas Racer Feminino',
@@ -51,6 +54,7 @@ const shoes = [
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Tênis Olympikus Urano Masculino',
@@ -64,6 +68,7 @@ const shoes = [
     size: [39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Tênis Olympikus 146G Ultraleve Feminino',
@@ -77,6 +82,7 @@ const shoes = [
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Chinelo Nuvem Slide Retro',
@@ -91,6 +97,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Sandália Havaianas Power 2.0',
@@ -105,6 +112,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Chinelo Nike Victory Feminino',
@@ -118,6 +126,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Bota Adventure Masculina',
@@ -131,6 +140,7 @@ const shoes = [
     size: [39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Bota Coturno Casual Unissex',
@@ -145,6 +155,7 @@ const shoes = [
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Sandália Modarpe Salto Bloco Grosso',
@@ -158,6 +169,7 @@ const shoes = [
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Sandália Feminina Beira Rio',
@@ -171,6 +183,7 @@ const shoes = [
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
 ];
 
