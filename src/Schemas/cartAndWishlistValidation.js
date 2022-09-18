@@ -1,8 +1,8 @@
 import joi from 'joi';
 
 const cartAndWishlistSchema = joi.object({
-  color: joi.required(),
-  size: joi.required(),
+  color: joi.string(),
+  size: joi.string(),
 });
 
 export { cartAndWishlistSchema };

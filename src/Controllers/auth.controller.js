@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable import/extensions */
 import bcrypt from 'bcrypt';
 import { v4 as uuid } from 'uuid';
@@ -51,28 +52,43 @@ async function loginUser(req, res) {
   }
 
   try {
-
-    const checkUser = await db.collection('users').findOne({ email: user.email });
+    const checkUser = await db
+      .collection('users')
+      .findOne({ email: user.email });
 
     if (!checkUser) {
-      return res.status(422).send("Email ou senha inválidos.");
+      return res.status(422).send('Email ou senha inválidos.');
     }
 
-    const decryptedPassword = bcrypt.compareSync(user.password, checkUser.password);
+    const decryptedPassword = bcrypt.compareSync(
+      user.password,
+      checkUser.password
+    );
 
     if (decryptedPassword) {
       const token = uuid();
       await db.collection('sessions').insertOne({
         token,
-        userId: checkUser._id
+        userId: checkUser._id,
       });
-      
+
       return res.status(200).send({ token, name: checkUser.name });
     }
-    res.status(200).send('logado');
-    } catch (error) {
+    return res.status(401).send('Email ou senha inválidos.');
+  } catch (error) {
     return res.send(error.message);
   }
 }
 
-export { registerUser, loginUser };
+async function removeUserSession(req, res) {
+  const { token } = req.params;
+
+  try {
+    await db.collection('sessions').deleteOne({ token });
+    return res.sendStatus(200);
+  } catch (error) {
+    return res.send(error.message);
+  }
+}
+
+export { registerUser, loginUser, removeUserSession };

@@ -6,6 +6,8 @@ import authRouter from './Routes/authRouter.js';
 import searchRouter from './Routes/searchRouter.js';
 import productRouter from './Routes/productRouter.js';
 import checkoutRouter from './Routes/checkoutRouter.js';
+import productsRouter from './Routes/productsRouter.js';
+
 
 const server = express();
 server.use(express.json());
@@ -14,5 +16,8 @@ server.use(authRouter);
 server.use(searchRouter);
 server.use(productRouter);
 server.use(checkoutRouter);
+server.use(productsRouter);
 
-server.listen(5000, () => console.log('Listening on port 5000'));
+server.listen(process.env.PORT, () =>
+  console.log(`Listening on port ${process.env.PORT}`)
+);
