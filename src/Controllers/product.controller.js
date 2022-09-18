@@ -95,19 +95,19 @@ async function addCart(req, res) {
 
 async function addWishlist(req, res) {
   const { user } = res.locals;
-  const productId = req.body;
+  const { id } = req.params;
 
   try {
     const productInfo = await db
       .collection('products')
-      .findOne({ _id: new ObjectId(productId) });
+      .findOne({ _id: new ObjectId(id) });
 
     await db.collection('wishlist').insertOne({
       ...productInfo,
       userId: user._id,
     });
 
-    res.sendStatus(201);
+    return res.sendStatus(201);
   } catch (error) {
     return res.send(error.message);
   }
