@@ -57,37 +57,25 @@ async function addCart(req, res) {
     return res.status(400).send(errorList);
   }
 
-  const token = req.headers.authorization?.replace('Bearer ', '');
-
-  if (!token) {
-    return res.send(401);
-  }
+  const { user } = res.locals;
+  const { id } = req.params;
 
   try {
-    const session = await db.collection('sessions').findOne({
-      token,
-    });
-
-    if (!session) {
-      return res.send(401);
-    }
-
-    const user = await db.collection('users').findOne({
-      _id: session.userId,
-    });
 
     if (!user) {
       return res.send(401);
     }
 
-    const { color, size } = req.body;
+    const productInfo = await db
+      .collection('products')
+      .findOne({ _id: new ObjectId(id) });
 
-    await db.collection('cart').insertOne({
-      color,
-      size,
+    await db.collection('chart').insertOne({
+      ...productInfo,
+      userId: user._id,
     });
 
-    res.sendStatus(201);
+    return res.sendStatus(201);
   } catch (error) {
     return res.send(error.message);
   }

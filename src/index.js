@@ -5,6 +5,7 @@ import cors from 'cors';
 import authRouter from './Routes/authRouter.js';
 import searchRouter from './Routes/searchRouter.js';
 import productRouter from './Routes/productRouter.js';
+import checkoutRouter from './Routes/checkoutRouter.js';
 import productsRouter from './Routes/productsRouter.js';
 
 const server = express();
@@ -13,6 +14,7 @@ server.use(cors());
 server.use(authRouter);
 server.use(searchRouter);
 server.use(productRouter);
+server.use(checkoutRouter);
 server.use(productsRouter);
 
 server.listen(process.env.PORT, () =>
