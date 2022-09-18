@@ -36,11 +36,12 @@ async function checkout (req, res) {
             return res.send(401);
         }
 
-        const { cpf,
+        const {cpf,
             name,
             lastName,
             PhoneNumber,
             emailAdress,
+            confirmEmailAdress,
             cep,
             state,
             city,
@@ -56,6 +57,7 @@ async function checkout (req, res) {
             lastName,
             PhoneNumber,
             emailAdress,
+            confirmEmailAdress,
             cep,
             state,
             city,
