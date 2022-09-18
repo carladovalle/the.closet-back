@@ -8,7 +8,6 @@ import productRouter from './Routes/productRouter.js';
 import checkoutRouter from './Routes/checkoutRouter.js';
 import productsRouter from './Routes/productsRouter.js';
 
-
 const server = express();
 server.use(express.json());
 server.use(cors());
