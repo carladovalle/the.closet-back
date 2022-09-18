@@ -12,6 +12,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Dog On The Rock',
@@ -25,6 +26,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Helena',
@@ -38,6 +40,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Mandala Roxa',
@@ -51,6 +54,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Unissex Anti Social Club',
@@ -64,6 +68,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Masculina Urso Nasa',
@@ -77,6 +82,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Masculina Alkary Abduzido',
@@ -89,6 +95,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina LoveCoffee',
@@ -102,6 +109,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Guitarra Rock',
@@ -115,6 +123,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Voorth',
@@ -128,6 +137,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Jaqueta Puffer Masculina Bobojaco',
@@ -141,6 +151,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Jaqueta Feminina Corta Vento Adidas',
@@ -154,6 +165,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Jaqueta Corta Vento Masculina',
@@ -167,6 +179,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Jaqueta Moletom Feminino Wind',
@@ -181,6 +194,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Unissex Canguru Lyrical rosa',
@@ -195,6 +209,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Unissex Astronauta',
@@ -209,6 +224,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Masculino Caveira Espacial',
@@ -222,6 +238,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Masculino Básico Coroa',
@@ -235,6 +252,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Feminino NYC',
@@ -248,6 +266,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Moletom Feminino Volcom S.Stone',
@@ -261,6 +280,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Calça Moletom Masculina Jogger',
@@ -274,6 +294,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Calça Sarja Masculina',
@@ -287,6 +308,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Calça Legging Fila Letter',
@@ -300,6 +322,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Jeans Feminina Barra Desfiada',
@@ -313,6 +336,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Shorts Frantness Comfy Feminino',
@@ -326,6 +350,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Shorts Feminino Academia Suplex',
@@ -340,6 +365,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Bermuda Moletom Masculina MXD Caveiras',
@@ -354,6 +380,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
   {
     name: 'Short Masculino Estampado',
@@ -367,6 +394,7 @@ const clothes = [
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
+    inWishlist: false,
   },
 ];
 

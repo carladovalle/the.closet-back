@@ -7,7 +7,6 @@ import searchRouter from './Routes/searchRouter.js';
 import productRouter from './Routes/productRouter.js';
 import productsRouter from './Routes/productsRouter.js';
 
-
 const server = express();
 server.use(express.json());
 server.use(cors());
