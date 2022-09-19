@@ -9,5 +9,6 @@ router.put('/product/:productId', productController.reviews);
 router.get('/product/:id', productController.product);
 router.post('/cart', productController.addCart);
 router.post('/wishlist/:id', authToken, productController.addWishlist);
+router.delete('/wishlist/:id', authToken, productController.removeWishlist);
 
 export default router;

@@ -113,4 +113,25 @@ async function addWishlist(req, res) {
   }
 }
 
-export { product, addCart, addWishlist, reviews };
+async function removeWishlist(req, res) {
+  const { user } = res.locals;
+  const { id } = req.params;
+
+  try {
+    if (id === 'clean') {
+      await db.collection('wishlist').deleteMany({
+        userId: user._id,
+      });
+    }
+
+    await db.collection('wishlist').deleteOne({
+      _id: new ObjectId(id),
+    });
+
+    return res.sendStatus(201);
+  } catch (error) {
+    return res.send(error.message);
+  }
+}
+
+export { product, addCart, addWishlist, reviews, removeWishlist };
