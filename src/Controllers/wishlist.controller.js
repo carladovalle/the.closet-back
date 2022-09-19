@@ -12,10 +12,13 @@ async function addWishlist(req, res) {
       .collection('products')
       .findOne({ _id: new ObjectId(id) });
 
+    const productId = productInfo._id;
+
     delete productInfo._id;
 
     await db.collection('wishlist').insertOne({
       ...productInfo,
+      productId,
       userId: user._id,
     });
 
