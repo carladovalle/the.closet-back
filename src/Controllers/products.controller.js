@@ -80,14 +80,22 @@ async function listAllProducts(req, res) {
 }
 
 async function listWishlistProducts(req, res) {
-  const { user } = res.locals;
+  const token = req.headers.authorization?.replace('Bearer ', '');
 
   try {
-    const products = await db
-      .collection('wishlist')
-      .find({ userId: user._id })
-      .toArray();
-    return res.status(200).send(products);
+    const session = await db.collection('sessions').findOne({ token });
+
+    if (session) {
+      const user = await db
+        .collection('users')
+        .findOne({ _id: session.userId });
+      const products = await db
+        .collection('wishlist')
+        .find({ userId: user._id })
+        .toArray();
+      return res.status(200).send(products);
+    }
+    return res.status(200).send([]);
   } catch (error) {
     return res.status(400).send(error.message);
   }

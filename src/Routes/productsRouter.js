@@ -14,6 +14,6 @@ router.put(
   productsController.updateProductAmount
 );
 router.get('/chart', authToken, productsController.listSelectedProducts);
-router.get('/wishlist', authToken, productsController.listWishlistProducts);
+router.get('/wishlist', productsController.listWishlistProducts);
 
 export default router;
