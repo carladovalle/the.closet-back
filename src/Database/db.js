@@ -6,7 +6,6 @@ dotenv.config();
 
 const mongoClient = new MongoClient(process.env.MONGO_URI);
 
-
 try {
   mongoClient.connect();
 } catch (error) {
