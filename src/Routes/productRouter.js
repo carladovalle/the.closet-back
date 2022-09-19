@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.put('/product/:productId', productController.reviews);
 router.get('/product/:id', productController.product);
-router.post('/chart/:id', productController.addCart);
+router.post('/chart/:id', authToken, productController.addCart);
 router.post('/wishlist/:id', authToken, productController.addWishlist);
 
 export default router;

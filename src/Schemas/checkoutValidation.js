@@ -4,7 +4,7 @@ const checkoutSchema = joi.object({
     cpf: joi.number().required(),
     name: joi.string().required(),
     lastName: joi.string().required(),
-    PhoneNumber: joi.number().required(),
+    PhoneNumber: joi.number(),
     emailAdress: joi.string().email().required(),
     confirmEmailAdress: joi.string().email().required(),
     cep: joi.number().required(),
@@ -15,8 +15,13 @@ const checkoutSchema = joi.object({
     number: joi.number().required(),
     complement: joi.string(),
     reference: joi.string(),
-    /*deliveryType: joi.string().required(),
-    paymentMethod: joi.string().required(),*/
+    paymentMethods: joi.string().required(),
+    numberCard: joi.number(),
+    nameCard: joi.string(),
+    dateCard: joi.date(),
+    codeCard: joi.number(),
+    cpfCard: joi.number(),
+    installments: joi.number()
 });
 
 export { checkoutSchema };
