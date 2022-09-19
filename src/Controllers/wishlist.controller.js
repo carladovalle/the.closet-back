@@ -12,6 +12,8 @@ async function addWishlist(req, res) {
       .collection('products')
       .findOne({ _id: new ObjectId(id) });
 
+    delete productInfo._id;
+
     await db.collection('wishlist').insertOne({
       ...productInfo,
       userId: user._id,
