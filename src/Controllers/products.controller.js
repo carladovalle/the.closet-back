@@ -97,7 +97,6 @@ function populeProductsCollection(req, res) {
   function shuffle() {
     return Math.random() - 0.5;
   }
-
   const organizedShoes = shoes.sort(shuffle);
   const organizedClothes = clothes.sort(shuffle);
 
