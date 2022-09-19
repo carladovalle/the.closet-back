@@ -8,11 +8,10 @@ const shoes = [
     price: 26910,
     image:
       'https://static.netshoes.com.br/produtos/tenis-lacoste-lerond-masculino/14/D66-6895-014/D66-6895-014_zoom1.jpg?ts=1625595597&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Tenis Adidas Lite Feminino',
@@ -22,11 +21,10 @@ const shoes = [
     price: 29691,
     image:
       'https://static.netshoes.com.br/produtos/tenis-adidas-lite-racer-30-feminino/76/3ZP-3550-876/3ZP-3550-876_zoom1.jpg?ts=1638209746&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Tênis Nike Precision Masculino',
@@ -36,11 +34,10 @@ const shoes = [
     price: 35999,
     image:
       'https://static.netshoes.com.br/produtos/tenis-nike-precision-vi-masculino/02/2IC-7496-002/2IC-7496-002_zoom1.jpg?ts=1655749741&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Tenis Adidas Racer Feminino',
@@ -50,11 +47,10 @@ const shoes = [
     price: 36800,
     image:
       'https://static.netshoes.com.br/produtos/tenis-adidas-lite-racer-30-feminino/34/3ZP-3550-234/3ZP-3550-234_zoom1.jpg?ts=1638209610&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Tênis Olympikus Urano Masculino',
@@ -64,11 +60,10 @@ const shoes = [
     price: 18999,
     image:
       'https://static.netshoes.com.br/produtos/tenis-olympikus-urano-masculino/06/2I2-5828-006/2I2-5828-006_zoom1.jpg?ts=1662123733&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Tênis Olympikus 146G Ultraleve Feminino',
@@ -78,11 +73,10 @@ const shoes = [
     price: 20699,
     image:
       'https://static.netshoes.com.br/produtos/tenis-olympikus-146g-ultraleve-feminino/06/2I2-5824-006/2I2-5824-006_zoom1.jpg?ts=1662123727&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Chinelo Nuvem Slide Retro',
@@ -93,11 +87,10 @@ const shoes = [
     price: 7189,
     image:
       'https://static.netshoes.com.br/produtos/chinelo-nuvem-slide-retro-100-eva-confortavel-ortopedico/04/6MV-0016-004/6MV-0016-004_zoom1.jpg?ts=1661506151&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Sandália Havaianas Power 2.0',
@@ -108,11 +101,10 @@ const shoes = [
     price: 3899,
     image:
       'https://static.netshoes.com.br/produtos/sandalia-havaianas-power-20/08/D53-2162-008/D53-2162-008_zoom1.jpg?ts=1629826658&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Chinelo Nike Victory Feminino',
@@ -122,11 +114,10 @@ const shoes = [
     price: 11399,
     image:
       'https://static.netshoes.com.br/produtos/chinelo-nike-slide-victory-feminino/26/2IC-6022-026/2IC-6022-026_zoom2.jpg?ts=1643836563&?ims=544xhttps://static.netshoes.com.br/produtos/chinelo-nike-slide-victory-feminino/26/2IC-6022-026/2IC-6022-026_zoom2.jpg?ts=1643836563&?ims=1088x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Bota Adventure Masculina',
@@ -136,11 +127,10 @@ const shoes = [
     price: 11180,
     image:
       'https://static.netshoes.com.br/produtos/bota-adventure-masculina-coturno-motociclista-trilha/64/7FR-0000-264/7FR-0000-264_zoom1.jpg?ts=1637281589&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Bota Coturno Casual Unissex',
@@ -151,11 +141,10 @@ const shoes = [
     price: 7990,
     image:
       'https://static.netshoes.com.br/produtos/bota-coturno-casual-cano-curto-unissex-com-recortes-sola-de-borracha-costurada/04/LUC-0217-004/LUC-0217-004_zoom1.jpg?ts=1646836050&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38, 39, 40, 41],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Sandália Modarpe Salto Bloco Grosso',
@@ -165,11 +154,10 @@ const shoes = [
     price: 12990,
     image:
       'https://static.netshoes.com.br/produtos/sandalia-modarpe-salto-bloco-grosso-amarracao-feminina-b15/03/40P-0016-203/40P-0016-203_zoom1.jpg?ts=1657333942&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Sandália Feminina Beira Rio',
@@ -179,11 +167,10 @@ const shoes = [
     price: 9990,
     image:
       'https://static.netshoes.com.br/produtos/sandalia-feminina-beira-rio-8367641/18/D7A-1238-018/D7A-1238-018_zoom1.jpg?ts=1663095442&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: [35, 36, 37, 38],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
 ];
 
