@@ -79,6 +79,20 @@ async function listAllProducts(req, res) {
   }
 }
 
+async function listWishlistProducts(req, res) {
+  const { user } = res.locals;
+
+  try {
+    const products = await db
+      .collection('wishlist')
+      .find({ userId: user._id })
+      .toArray();
+    return res.status(200).send(products);
+  } catch (error) {
+    return res.status(400).send(error.message);
+  }
+}
+
 function populeProductsCollection(req, res) {
   function shuffle() {
     return Math.random() - 0.5;
@@ -98,4 +112,5 @@ export {
   updateProductAmount,
   populeProductsCollection,
   listAllProducts,
+  listWishlistProducts,
 };
