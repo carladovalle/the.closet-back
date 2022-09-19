@@ -33,6 +33,7 @@ async function registerUser(req, res) {
       name,
       email,
       password: encryptedPassword,
+      shopHistory: [],
     });
     return res.sendStatus(201);
   } catch (error) {

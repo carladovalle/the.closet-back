@@ -4,6 +4,7 @@ import { authToken } from '../Middlewares/authTokenMiddleware.js';
 
 const router = express.Router();
 
-router.post('/checkout', authToken, checkoutController.checkout);
+router.put('/checkout', authToken, checkoutController.checkout);
+router.delete('/checkout', authToken, checkoutController.cleanChart);
 
 export default router;

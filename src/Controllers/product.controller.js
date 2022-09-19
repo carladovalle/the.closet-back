@@ -45,12 +45,10 @@ async function reviews(req, res) {
 }
 
 async function addCart(req, res) {
-
   const { user } = res.locals;
   const { id } = req.params;
 
   try {
-
     if (!user) {
       return res.send(401);
     }
@@ -58,6 +56,8 @@ async function addCart(req, res) {
     const productInfo = await db
       .collection('products')
       .findOne({ _id: new ObjectId(id) });
+
+    delete productInfo._id;
 
     await db.collection('chart').insertOne({
       ...productInfo,
