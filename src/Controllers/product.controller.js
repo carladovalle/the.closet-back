@@ -3,7 +3,6 @@
 /* eslint-disable consistent-return */
 import { ObjectId } from 'mongodb';
 import db from '../Database/db.js';
-import { cartAndWishlistSchema } from '../Schemas/cartAndWishlistValidation.js';
 import { reviewsSchema } from '../Schemas/reviewsValidation.js';
 
 async function product(req, res) {
@@ -46,16 +45,6 @@ async function reviews(req, res) {
 }
 
 async function addCart(req, res) {
-  const validation = cartAndWishlistSchema.validate(req.body, {
-    abortEarly: false,
-  });
-
-  if (validation.error) {
-    const errorList = validation.error.details
-      .map((err) => err.message)
-      .join('\n');
-    return res.status(400).send(errorList);
-  }
 
   const { user } = res.locals;
   const { id } = req.params;

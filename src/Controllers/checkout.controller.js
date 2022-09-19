@@ -12,29 +12,7 @@ async function checkout (req, res) {
       return res.status(400).send(errorList);
     }
 
-    const token = req.headers.authorization?.replace('Bearer ', '');
-
-    if(!token) {
-        return res.send(401);
-    }
-
     try {
-
-        const session = await db.collection('sessions').findOne({
-            token,
-        });
-
-        if (!session) {
-            return res.send(401);
-        }
-
-        const user = await db.collection('users').findOne({
-            _id: session.userId
-        });
-
-        if (!user) {
-            return res.send(401);
-        }
 
         const {cpf,
             name,
@@ -49,7 +27,14 @@ async function checkout (req, res) {
             adress,
             number,
             complement,
-            reference } = req.body;
+            reference,
+            paymentMethods,
+            numberCard,
+            nameCard,
+            dateCard,
+            codeCard,
+            cpfCard,
+            installments } = req.body;
 
         await db.collection('checkout').insertOne({
             cpf,
@@ -65,7 +50,14 @@ async function checkout (req, res) {
             adress,
             number,
             complement,
-            reference
+            reference,
+            paymentMethods,
+            numberCard,
+            nameCard,
+            dateCard,
+            codeCard,
+            cpfCard,
+            installments
         });
 
         res.sendStatus(201);
