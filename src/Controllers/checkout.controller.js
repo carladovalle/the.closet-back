@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
+import dayjs from 'dayjs';
 import db from '../Database/db.js';
 import { checkoutSchema } from '../Schemas/checkoutValidation.js';
 
@@ -21,7 +22,14 @@ async function checkout(req, res) {
   try {
     db.collection('users').updateOne(
       { _id: user._id },
-      { $addToSet: { shopHistory: newTransaction } }
+      {
+        $addToSet: {
+          shopHistory: {
+            date: dayjs(Date.now()).format('DD/MM/YY'),
+            newTransaction,
+          },
+        },
+      }
     );
     res.sendStatus(201);
   } catch (error) {

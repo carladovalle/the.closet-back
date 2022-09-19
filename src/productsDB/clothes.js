@@ -8,11 +8,10 @@ const clothes = [
     price: 4290,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-los-angeles-la-camisa-swag-moda-de-rua-street/06/9I2-0168-006/9I2-0168-006_zoom1.jpg?ts=1646161808&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Dog On The Rock',
@@ -22,11 +21,10 @@ const clothes = [
     price: 9299,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-camisa-tshirt-masculina-dog-on-the-rock-animal-guitarra/14/6FO-0038-014/6FO-0038-014_zoom1.jpg?ts=1661969921&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Helena',
@@ -36,11 +34,10 @@ const clothes = [
     price: 3990,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-meia-malha-feminina-helena/30/B5M-0227-030/B5M-0227-030_zoom1.jpg?ts=1663150864&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Mandala Roxa',
@@ -50,11 +47,10 @@ const clothes = [
     price: 4990,
     image:
       'https://static.netshoes.com.br/produtos/camisetas-femininas-blusa-baby-look-mandala-roxa/14/5PD-1510-014/5PD-1510-014_zoom1.jpg?ts=1648254552&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Unissex Anti Social Club',
@@ -64,11 +60,10 @@ const clothes = [
     price: 2990,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-anti-social-club-detalhe-x-rosa-algodao-t-shirt/18/9L5-0028-018/9L5-0028-018_zoom1.jpg?ts=1662846690&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Masculina Urso Nasa',
@@ -78,11 +73,10 @@ const clothes = [
     price: 2990,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-estampa-urso-smile-basica-algodao/14/9L5-0044-014/9L5-0044-014_zoom1.jpg?ts=1662847704&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Masculina Alkary Abduzido',
@@ -91,11 +85,10 @@ const clothes = [
     price: 8980,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-alkary-raglan-manga-curta-abduzido/40/76E-0449-040/76E-0449-040_zoom1.jpg?ts=1661511553&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina LoveCoffee',
@@ -105,11 +98,10 @@ const clothes = [
     price: 3590,
     image:
       'https://static.netshoes.com.br/produtos/camisetas-femininas-baby-look-algodao-estampada-macia-e-leve-confortavel/06/74F-0323-006/74F-0323-006_zoom1.jpg?ts=1654434366&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Guitarra Rock',
@@ -119,11 +111,10 @@ const clothes = [
     price: 4990,
     image:
       'https://static.netshoes.com.br/produtos/camisetas-femininas-guitarra-rock-blusa-baby-look-cinza-v234/14/5PD-0812-014/5PD-0812-014_zoom1.jpg?ts=1633887777&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Camiseta Feminina Voorth',
@@ -133,11 +124,10 @@ const clothes = [
     price: 8990,
     image:
       'https://static.netshoes.com.br/produtos/camiseta-feminina-voorth-rosa-claro-5285/18/DV5-0000-018/DV5-0000-018_zoom1.jpg?ts=1662838121&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Jaqueta Puffer Masculina Bobojaco',
@@ -147,11 +137,10 @@ const clothes = [
     price: 24990,
     image:
       'https://static.netshoes.com.br/produtos/jaqueta-puffer-masculina-bobojaco-gomada-com-capuz-premium/06/HG5-0000-006/HG5-0000-006_zoom1.jpg?ts=1662814223&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Jaqueta Feminina Corta Vento Adidas',
@@ -161,11 +150,10 @@ const clothes = [
     price: 35999,
     image:
       'https://static.netshoes.com.br/produtos/jaqueta-corta-vento-adidas-linear-feminina/39/FB8-0973-939/FB8-0973-939_zoom1.jpg?ts=1662402255&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Jaqueta Corta Vento Masculina',
@@ -175,11 +163,10 @@ const clothes = [
     price: 9990,
     image:
       'https://static.netshoes.com.br/produtos/jaqueta-corta-vento-ciclismo-bike-moto-com-capuz/14/5TZ-0388-014/5TZ-0388-014_zoom1.jpg?ts=1663123016&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Jaqueta Moletom Feminino Wind',
@@ -190,11 +177,10 @@ const clothes = [
     price: 4990,
     image:
       'https://static.netshoes.com.br/produtos/jaqueta-moletom-jeans-feminino-wind-life/19/B5M-0163-219/B5M-0163-219_zoom1.jpg?ts=1659376026&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Unissex Canguru Lyrical rosa',
@@ -205,11 +191,10 @@ const clothes = [
     price: 8590,
     image:
       'https://static.netshoes.com.br/produtos/moletom-canguru-lyrical-rosa-blusa-de-frio-casaco/18/EOQ-1379-018/EOQ-1379-018_zoom1.jpg?ts=1662834924&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Unissex Astronauta',
@@ -220,11 +205,10 @@ const clothes = [
     price: 10791,
     image:
       'https://static.netshoes.com.br/produtos/blusa-de-frio-agasalho-manga-longa-tsm-astronauta-pensativo-/10/6HX-0991-010/6HX-0991-010_zoom1.jpg?ts=1662020472&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Masculino Caveira Espacial',
@@ -234,11 +218,10 @@ const clothes = [
     price: 10791,
     image:
       'https://static.netshoes.com.br/produtos/blusa-de-frio-modelo-moletom-tsm-3d-full-caveira-espaco-/06/6HX-0820-006/6HX-0820-006_zoom1.jpg?ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Masculino Básico Coroa',
@@ -248,11 +231,10 @@ const clothes = [
     price: 8190,
     image:
       'https://static.netshoes.com.br/produtos/blusa-de-moletom-algodao-bolso-canguru-com-capuz-ajustavel-conforto-inverno-basico-dia-a-dia/60/I0V-0002-060/I0V-0002-060_zoom1.jpg?ts=1662411318&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Feminino NYC',
@@ -262,11 +244,10 @@ const clothes = [
     price: 12990,
     image:
       'https://static.netshoes.com.br/produtos/moletom-feminino-aberto-estampa-new-york-city/06/KTF-0232-006/KTF-0232-006_zoom1.jpg?ts=1624023141&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Moletom Feminino Volcom S.Stone',
@@ -276,11 +257,10 @@ const clothes = [
     price: 12990,
     image:
       'https://static.netshoes.com.br/produtos/moletom-carec-single-stone-feminino-volcom/40/A03-9681-040/A03-9681-040_zoom1.jpg?ts=1662189872&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Calça Moletom Masculina Jogger',
@@ -290,11 +270,10 @@ const clothes = [
     price: 9990,
     image:
       'https://static.netshoes.com.br/produtos/calca-moletom-moleton-normal-swag-jogger-masculina-top-basic/75/9OS-0054-375/9OS-0054-375_zoom1.jpg?ts=1662810120&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Calça Sarja Masculina',
@@ -304,11 +283,10 @@ const clothes = [
     price: 12990,
     image:
       'https://static.netshoes.com.br/produtos/calca-sarja-class-sarja-dark-black/06/I8Z-0006-006/I8Z-0006-006_zoom1.jpg?ts=1663166505&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Calça Legging Fila Letter',
@@ -318,11 +296,10 @@ const clothes = [
     price: 15190,
     image:
       'https://static.netshoes.com.br/produtos/calca-legging-fila-letter-cintura-media-feminina/34/D29-1651-234/D29-1651-234_zoom1.jpg?ts=1663007496&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Jeans Feminina Barra Desfiada',
@@ -332,11 +309,10 @@ const clothes = [
     price: 17990,
     image:
       'https://static.netshoes.com.br/produtos/calca-jeans-feminina-cropped-barra-desfiada/62/47E-0430-162/47E-0430-162_zoom1.jpg?ts=1662844745&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Shorts Frantness Comfy Feminino',
@@ -346,11 +322,10 @@ const clothes = [
     price: 6990,
     image:
       'https://static.netshoes.com.br/produtos/shorts-frantness-comfy-feminino/62/I5I-0008-862/I5I-0008-862_zoom1.jpg?ts=1662848064&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Shorts Feminino Academia Suplex',
@@ -361,11 +336,10 @@ const clothes = [
     price: 17990,
     image:
       'https://static.netshoes.com.br/produtos/shorts-academia-suplex-ausare-sh0040-femininino/10/3YF-0227-010/3YF-0227-010_zoom1.jpg?ts=1661977080&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Bermuda Moletom Masculina MXD Caveiras',
@@ -376,11 +350,10 @@ const clothes = [
     price: 4392,
     image:
       'https://static.netshoes.com.br/produtos/bermuda-mxd-conceito-moletom-slim-fit-caveiras-enterradas-masculina/06/LZY-0006-006/LZY-0006-006_zoom1.jpg?ts=1644396061&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
   {
     name: 'Short Masculino Estampado',
@@ -390,11 +363,10 @@ const clothes = [
     price: 12990,
     image:
       'https://static.netshoes.com.br/produtos/short-moda-praia-masculino-g1-g2-g3-estampado-tamanho-grande/14/4X6-0076-014/4X6-0076-014_zoom1.jpg?ts=1649595342&ims=544x',
-    color: ['#ffffff', '#000000', '#FF69B4', '#008000', 'CF0E0E'],
+    color: ['Branco', 'Preto', 'Rosa', 'Verde', 'Azul'],
     size: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
     amount: 1,
     comments: [],
-    inWishlist: false,
   },
 ];
 
