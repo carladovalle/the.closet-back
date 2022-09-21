@@ -73,7 +73,11 @@ async function loginUser(req, res) {
         userId: checkUser._id,
       });
 
-      return res.status(200).send({ token, name: checkUser.name });
+      return res.status(200).send({
+        token,
+        name: checkUser.name,
+        userId: checkUser._id.toString(),
+      });
     }
     return res.status(401).send('Email ou senha inválidos.');
   } catch (error) {
