@@ -37,11 +37,26 @@ async function removeWishlist(req, res) {
       await db.collection('wishlist').deleteMany({
         userId: user._id,
       });
+
+      await db.collection('products').updateMany(
+        {
+          userWishlist: { $in: [user._id.toString()] },
+        },
+        { $pull: { userWishlist: user._id.toString() } }
+      );
+      return res.sendStatus(201);
     }
 
     await db.collection('wishlist').deleteOne({
-      _id: new ObjectId(id),
+      productId: new ObjectId(id),
     });
+
+    await db
+      .collection('products')
+      .updateOne(
+        { _id: new ObjectId(id) },
+        { $pull: { userWishlist: user._id.toString() } }
+      );
 
     return res.sendStatus(201);
   } catch (error) {
@@ -71,4 +86,37 @@ async function listWishlistProducts(req, res) {
   }
 }
 
-export { addWishlist, removeWishlist, listWishlistProducts };
+async function updateWishlistUserList(req, res) {
+  const { id } = req.params;
+  const { status } = req.body;
+  const { user } = res.locals;
+
+  try {
+    if (status) {
+      await db
+        .collection('products')
+        .updateOne(
+          { _id: new ObjectId(id) },
+          { $addToSet: { userWishlist: user._id.toString() } }
+        );
+    } else {
+      await db
+        .collection('products')
+        .updateOne(
+          { _id: new ObjectId(id) },
+          { $pull: { userWishlist: user._id.toString() } }
+        );
+    }
+
+    return res.sendStatus(201);
+  } catch (error) {
+    return res.send(error.message);
+  }
+}
+
+export {
+  addWishlist,
+  removeWishlist,
+  listWishlistProducts,
+  updateWishlistUserList,
+};
