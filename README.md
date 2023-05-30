@@ -19,9 +19,11 @@
 - Inclusão/Remoção de itens no carrinho de compras, possibilitando ao usuário escolher a quantidade desejada de cada item;
 - Checkout para finalização da compra, no qual são inseridos os dados pessoais/financeiros e o endereço de entrega. Ao fim, é exibida ao usuário uma janela com o resumo do pedido, cujos dados são salvos em banco de dados que serão utilizados, futuramente, na construção de uma página de histórico de compras.
 
-Você pode visualizar o repositório do front-end <a href="https://github.com/carladovalle/the.closet-front">aqui</a>.</p>
+<div align="center">
+  <img src="https://i.postimg.cc/138PKx9K/the-closet.png" />
+</div>
 
-Teste a aplicação através do link: https://projeto14-the-closet-front.vercel.app/
+Você pode visualizar o repositório do front-end <a href="https://github.com/carladovalle/the.closet-front">aqui</a>.</p>
 
 ## ⚙️ Como rodar a aplicação
 
